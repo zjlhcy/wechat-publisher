@@ -3,7 +3,7 @@ name: Daily Publish to WeChat Drafts
 on:
   schedule:
     - cron: '0 23 * * *'
-  workflow_dispatch:
+  workflow_dispatch: {}
 
 jobs:
   publish:
