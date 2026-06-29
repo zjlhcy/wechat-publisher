@@ -1,6 +1,10 @@
 name: Daily Publish to WeChat Drafts
 
 on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - '**.md'
   schedule:
     - cron: '0 23 * * *'
   workflow_dispatch: {}
