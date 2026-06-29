@@ -1,0 +1,22 @@
+# 微信凭证 - 不要提交到仓库
+config.local.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# 已发布的文章标记
+*.published
+
+# 日志
+logs/*.log
+
+# 临时文件
+*.tmp
+.DS_Store
+Thumbs.db
+
+# 虚拟环境
+venv/
+env/
