@@ -3,8 +3,10 @@
 import json
 from datetime import date
 
+import os
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 today = date.today().strftime('%Y%m%d')
-img_dir = "C:/Users/Administrator/WorkBuddy/2026-06-28-17-00-58/wechat_auto_publisher/output/images"
+img_dir = os.path.join(BASE_DIR, "output/images")
 
 articles = {
     "articles": [
@@ -209,7 +211,8 @@ articles = {
     ]
 }
 
-output_path = f"C:/Users/Administrator/WorkBuddy/2026-06-28-17-00-58/wechat_auto_publisher/output/articles/articles_{today}.json"
+os.makedirs(os.path.join(BASE_DIR, "output/articles"), exist_ok=True)
+output_path = os.path.join(BASE_DIR, f"output/articles/articles_{today}.json")
 with open(output_path, 'w', encoding='utf-8') as f:
     json.dump(articles, f, ensure_ascii=False, indent=2)
 
