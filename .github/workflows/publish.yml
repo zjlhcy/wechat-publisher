@@ -20,30 +20,25 @@ jobs:
       - name: Install dependencies
         run: pip install requests Pillow
 
-      - name: Create output directories
+      - name: Generate articles and placeholder images
         run: |
-          mkdir -p output/articles
-          mkdir -p output/images
-          mkdir -p logs
-
-      - name: Generate placeholder images (if needed)
-        run: |
+          mkdir -p output/articles output/images logs
+          python generate_articles_v2.py
+          # Generate placeholder images for testing
           python -c "
-          from PIL import Image
+          from PIL import Image, ImageDraw
           import os
           img_dir = 'output/images'
-          os.makedirs(img_dir, exist_ok=True)
-          # Create a placeholder cover image
-          img = Image.new('RGB', (900, 500), color=(66, 133, 244))
-          img.save(os.path.join(img_dir, 'cover_placeholder.png'))
-          # Create placeholder content images
-          for i in range(1, 4):
-              img2 = Image.new('RGB', (800, 450), color=(52, 168, 83))
-              img2.save(os.path.join(img_dir, f'content_{i}.png'))
+          colors = [(66,133,244), (52,168,83), (251,188,4), (234,67,53), (142,68,173), (26,188,156)]
+          for i, color in enumerate(colors, 1):
+              img = Image.new('RGB', (900, 500), color=color)
+              draw = ImageDraw.Draw(img)
+              draw.text((50, 220), f'Image {i}', fill='white')
+              img.save(os.path.join(img_dir, f'placeholder_{i}.png'))
           print('Placeholder images created')
           "
 
-      - name: Run publisher
+      - name: Publish articles to WeChat drafts
         env:
           WECHAT_APPID: ${{ secrets.WECHAT_APPID }}
           WECHAT_APPSECRET: ${{ secrets.WECHAT_APPSECRET }}
