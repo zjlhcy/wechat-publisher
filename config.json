@@ -9,11 +9,11 @@
     "cleanup_after_days": 1
   },
   "paths": {
-    "base_dir": "C:/Users/Administrator/WorkBuddy/2026-06-28-17-00-58/wechat_auto_publisher",
-    "output_dir": "C:/Users/Administrator/WorkBuddy/2026-06-28-17-00-58/wechat_auto_publisher/output",
-    "articles_dir": "C:/Users/Administrator/WorkBuddy/2026-06-28-17-00-58/wechat_auto_publisher/output/articles",
-    "images_dir": "C:/Users/Administrator/WorkBuddy/2026-06-28-17-00-58/wechat_auto_publisher/output/images",
-    "logs_dir": "C:/Users/Administrator/WorkBuddy/2026-06-28-17-00-58/wechat_auto_publisher/logs"
+    "base_dir": ".",
+    "output_dir": "output",
+    "articles_dir": "output/articles",
+    "images_dir": "output/images",
+    "logs_dir": "logs"
   },
   "content": {
     "categories": [
