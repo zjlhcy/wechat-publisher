@@ -1,0 +1,42 @@
+{
+  "wechat": {
+    "appid": "wxe14c57f8b1bc28d8",
+    "appsecret": ""
+  },
+  "publish": {
+    "author": "前沿项目观察",
+    "daily_article_count": 3,
+    "cleanup_after_days": 1
+  },
+  "paths": {
+    "base_dir": "C:/Users/Administrator/WorkBuddy/2026-06-28-17-00-58/wechat_auto_publisher",
+    "output_dir": "C:/Users/Administrator/WorkBuddy/2026-06-28-17-00-58/wechat_auto_publisher/output",
+    "articles_dir": "C:/Users/Administrator/WorkBuddy/2026-06-28-17-00-58/wechat_auto_publisher/output/articles",
+    "images_dir": "C:/Users/Administrator/WorkBuddy/2026-06-28-17-00-58/wechat_auto_publisher/output/images",
+    "logs_dir": "C:/Users/Administrator/WorkBuddy/2026-06-28-17-00-58/wechat_auto_publisher/logs"
+  },
+  "content": {
+    "categories": [
+      "自媒体运营",
+      "实体店创业",
+      "个体经营",
+      "新媒体营销",
+      "诈骗项目曝光",
+      "科技项目",
+      "跨境电商",
+      "本地生活服务",
+      "AI应用项目",
+      "短视频变现",
+      "私域流量",
+      "直播带货",
+      "社区团购",
+      "知识付费",
+      "其他新兴赛道"
+    ],
+    "min_words": 1500,
+    "max_words": 3000,
+    "min_images": 3,
+    "max_images": 6,
+    "topics_count": 5
+  }
+}
