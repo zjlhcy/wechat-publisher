@@ -65,11 +65,11 @@ articles = {
                 '<p>这个项目说白了就是用AI降低了内容生产的门槛，但能不能赚到钱，还是看你愿不愿意花时间去打磨内容和运营。工具是死的，人是活的。</p>'
                 '<p>#AI壁纸变现 #小红书运营 #零成本创业 #AI副业 #小红书涨粉</p>'
             ),
-            "cover_image": f"{img_dir}/A_smartphone_displaying_Xiaoho_2026-06-28T09-27-02.png",
+            "cover_image": f"{img_dir}/placeholder_1.png",
             "content_images": [
-                f"{img_dir}/A_smartphone_displaying_Xiaoho_2026-06-28T09-27-02.png",
-                f"{img_dir}/A_computer_monitor_showing_AI__2026-06-28T09-27-02.png",
-                f"{img_dir}/A_professional_analytics_dashb_2026-06-28T09-27-02.png"
+                f"{img_dir}/placeholder_2.png",
+                f"{img_dir}/placeholder_3.png",
+                f"{img_dir}/placeholder_4.png"
             ],
             "topics": ["#AI壁纸变现", "#小红书运营", "#零成本创业", "#AI副业", "#小红书涨粉"]
         },
@@ -133,11 +133,11 @@ articles = {
                 '<p>说到底，这就是个搬砖活。不体面，但确实能赚钱。适不适合你，看你自己愿不愿意花这个时间。</p>'
                 '<p>#闲鱼无货源 #信息差赚钱 #零成本副业 #一件代发 #电商副业</p>'
             ),
-            "cover_image": f"{img_dir}/A_smartphone_showing_Xianyu_Id_2026-06-28T09-27-32.png",
+            "cover_image": f"{img_dir}/placeholder_1.png",
             "content_images": [
-                f"{img_dir}/A_smartphone_showing_Xianyu_Id_2026-06-28T09-27-32.png",
-                f"{img_dir}/A_split_screen_comparison_show_2026-06-28T09-27-31.png",
-                f"{img_dir}/A_clean_home_office_desk_with__2026-06-28T09-27-31.png"
+                f"{img_dir}/placeholder_2.png",
+                f"{img_dir}/placeholder_3.png",
+                f"{img_dir}/placeholder_5.png"
             ],
             "topics": ["#闲鱼无货源", "#信息差赚钱", "#零成本副业", "#一件代发", "#电商副业"]
         },
@@ -200,11 +200,11 @@ articles = {
                 '<p>这个项目的核心不是技术，是你愿不愿意走出家门去跟人打交道。能做到这一点，剩下的都不难。</p>'
                 '<p>#抖音本地生活 #团购服务商 #实体店引流 #同城流量 #代运营</p>'
             ),
-            "cover_image": f"{img_dir}/A_cozy_restaurant_interior_wit_2026-06-28T09-28-02.png",
+            "cover_image": f"{img_dir}/placeholder_1.png",
             "content_images": [
-                f"{img_dir}/A_cozy_restaurant_interior_wit_2026-06-28T09-28-02.png",
-                f"{img_dir}/A_computer_screen_showing_Douy_2026-06-28T09-28-02.png",
-                f"{img_dir}/A_business_meeting_scene_where_2026-06-28T09-28-02.png"
+                f"{img_dir}/placeholder_2.png",
+                f"{img_dir}/placeholder_4.png",
+                f"{img_dir}/placeholder_6.png"
             ],
             "topics": ["#抖音本地生活", "#团购服务商", "#实体店引流", "#同城流量", "#代运营"]
         }
