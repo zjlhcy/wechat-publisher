@@ -1,23 +1,25 @@
-名称: 每日文章发布到微信草稿箱
+: 
 
-on:
-  schedule:
+启用:
+计划:
     - cron: '0 23 * * *'
   workflow_dispatch:
 
 jobs:
   publish:
     runs-on: ubuntu-latest
+:
+      内容: 写入
     步骤:
-      - 名称: 检出代码
-        uses: actions/checkout@v4
-      - name: 安装 Python
-        uses: actions/setup-python@v5
+结账代码
+        使用actions/checkout@v4
+      - 名称: 设置Python
+        使用actions/setup-python@v5
         使用:
           python-version: '3.11'
-      - 名称: 安装依赖
+      - 名称: 安装依赖项
         run: pip install requests Pillow
-      - name: 发布文章到微信草稿箱
+      - 名称: 发布文章到微信草稿
         环境:
           WECHAT_APPID: ${{ secrets.WECHAT_APPID }}
           WECHAT_APPSECRET: ${{ secrets.WECHAT_APPSECRET }}
