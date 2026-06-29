@@ -233,12 +233,10 @@ def mark_as_published(json_path, results):
 
 
 def main():
-    import os
     config = load_config()
     # 本地配置文件覆盖（包含敏感信息，已 gitignore）
-    local_config_path = os.path.join(os.path.dirname(__file__), "config.local.json")
+    local_config_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "config.local.json")
     if os.path.exists(local_config_path):
-        import json
         with open(local_config_path, "r", encoding="utf-8") as f:
             local_config = json.load(f)
         config["wechat"].update(local_config.get("wechat", {}))
