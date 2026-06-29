@@ -8,17 +8,34 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+
       - name: Install dependencies
         run: pip install requests Pillow
+
+      - name: Generate articles
+        run: python generate_articles_v2.py
+
+      - name: Generate placeholder images
+        run: |
+          mkdir -p output/images
+          python -c "
+import os
+from PIL import Image
+for i in range(1, 7):
+    img = Image.new('RGB', (900, 500), color=(40+i*30, 80+i*20, 160+i*15))
+    path = f'output/images/placeholder_{i}.png'
+    img.save(path)
+    print(f'Created: {path}')
+          "
+
       - name: Publish articles to WeChat drafts
         env:
           WECHAT_APPID: ${{ secrets.WECHAT_APPID }}
